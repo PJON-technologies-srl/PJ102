@@ -13,7 +13,7 @@ ____|||_______|||_______|||______ SoftwareBitBang bus
 _____||________||________||______ +9v
 ______|_________|_________|______ GND
 ```
-Multiple PJ102s can be connected in parallel on the same [SoftwareBitBang](https://github.com/gioblu/PJON/tree/master/src/strategies/SoftwareBitBang) bus sharing the same power, ground and data connection. Each PJ102 is running an instance of the PJON protocol stack with its own configurable device id, so many can coexist on the same medium.
+Multiple PJ102s can be connected in parallel on the same [SoftwareBitBang](https://github.com/gioblu/PJON/tree/master/src/strategies/SoftwareBitBang) bus sharing the same power, ground and data connection. Each PJ102 is running an instance of the PJON protocol stack with its own configurable device id. Up to 255 PJ102s can communicate using the same wire. As demonstrated by the [LANC video camera control](http://jda.tel/pdf/lanc_video_camera_control.pdf) academic study the maximum range of the protocol is 2000m over CAT5 in a real world networking setup.  
 
 [PJ102](https://www.pjon-technologies.com/collections/pj100-hardware/products/pjon-sensor-102) has been engineered with the strong feeling that in the future "smart homes" will not necessarily host an embedded real-time operative system in whatever "thing" and expose vulnerabilities out of their physical boundaries. Otherwise, more probably, they will host many less power-hungry microcontrollers connected to a wired communication bus.
 
